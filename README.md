@@ -1,4 +1,4 @@
-# lncPCG_predictor
+# A general method for lncRNA-PCG relationship prediction
 
 R script for lncRNA-PCG prediction
 
