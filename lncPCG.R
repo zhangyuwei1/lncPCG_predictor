@@ -1,13 +1,14 @@
 
 #------------------------------------LR---------------------------------------
+##Note: Before you run the script, pls check the path and replace input file carefully.
 
-setwd("H:\\research\\interaction\\revision\\result")
+setwd("H:\\research\\interaction\\revision\\result") # change
 library(pROC)
 
-files<-dir("H:\\research\\interaction\\revision\\data\\train")
+files<-dir("H:\\research\\interaction\\revision\\data\\train")  # Pls replace the training set using the supplementary files in the article
 for(k in files )
 {
-  input<-paste("H:\\research\\interaction\\revision\\data\\train/",k,sep = "")
+  input<-paste("H:\\research\\interaction\\revision\\data\\train/",k,sep = "")  # change the path
   read.table(input,sep = "\t",header = T)->data
   a<-rep(1,nrow(data)/2)
   b<-rep(0,nrow(data)/2)
